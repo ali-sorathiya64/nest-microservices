@@ -2,6 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { MediaModule } from './media.module';
 import { Logger } from '@nestjs/common';
 import { MicroserviceOptions, Transport } from '@nestjs/microservices';
+import { applyToMicroservices } from '@app/rpc';
 
 async function bootstrap(){
 
@@ -27,6 +28,8 @@ async function bootstrap(){
       }
     }
   );
+
+  applyToMicroservices ( await app);
   (await app).listen;
   (await app).enableShutdownHooks
 
