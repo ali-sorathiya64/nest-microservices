@@ -15,6 +15,8 @@ import { ProductService } from './products/products.service';
     MongooseModule.forRoot(process.env.MONGODB_URI_CATALOG as string),
 
     MongooseModule.forFeature([{ name: Product.name, schema: ProductSchema }])
+
+    
   ],
 
   controllers: [CatalogController, ProductController],
