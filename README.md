@@ -81,7 +81,6 @@ apps/
 libs/
   ├── common/           # Shared DTOs, filters, decorators
   └── rmq/              # RabbitMQ client/module setup
-docker-compose.yml
 ```
 
 ---
