@@ -33,26 +33,26 @@ export class ProductsHttpController {
     @Inject('CATALOG_CLIENT') private readonly catalogClient: ClientProxy,
 
     @Inject('MEDIA_CLIENT') private readonly mediaClient: ClientProxy,
-  ) {}
+  ) { }
 
   //   media and image logic later placeholder
   @Post('products')
-//   @AdminOnly()
+  //   @AdminOnly()
   @UseInterceptors(
     FileInterceptor('image', {
       limits: {
-        fieldSize: 5 * 1024 * 1024,
+        fileSize: 5 * 1024 * 1024,
       },
     }),
   )
   async createProduct(
     @CurrentUser() user: UserContext,
     @UploadedFile()
-file: {
-  originalname: string;
-  mimetype: string;
-  buffer: Buffer;
-} | undefined,
+    file: {
+      originalname: string;
+      mimetype: string;
+      buffer: Buffer;
+    } | undefined,
 
     @Body()
     body: {
@@ -63,7 +63,7 @@ file: {
       imageUrl?: string;
     },
   ) {
-    
+
 
     let imageUrl: string | undefined = undefined;
     let mediaId: string | undefined = undefined;
