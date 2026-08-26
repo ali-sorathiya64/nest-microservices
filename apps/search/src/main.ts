@@ -32,7 +32,6 @@ const app = NestFactory.createMicroservice<MicroserviceOptions>(
 )
 
 applyToMicroservices(await app)
-
 ;(await app).enableShutdownHooks
 ;(await app).listen()
 
