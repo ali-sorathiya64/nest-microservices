@@ -37,7 +37,6 @@ applyToMicroservices(await app)
 
 logger.log(`Search rmq is listening on  queue ${queue} via ${rmqurl}`)
 
-
 }
 
 bootstrap();
