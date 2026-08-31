@@ -9,7 +9,6 @@ export function applyToMicroservices (app :INestMicroservice){
             forbidNonWhitelisted:true,
             transform:true
         })
-
     )
 
     app.useGlobalFilters(new RpcAllExceptionFilter());

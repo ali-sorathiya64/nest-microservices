@@ -9,8 +9,6 @@ export type RpcErrorCode =
 
     export type RpcErrorPayload ={
         code :RpcErrorCode,
-
         message:string,
-
         details ?:any
     }
