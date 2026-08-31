@@ -17,6 +17,7 @@ export class MediaController {
 
   @MessagePattern('media.attachToProduct')
   attachToProduct(@Payload() payload: AttachToProductDto) {
+    
     return this.mediaService.attachToProduct(payload);
   }
 

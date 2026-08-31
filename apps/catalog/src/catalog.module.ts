@@ -20,7 +20,7 @@ import { ProductEventPublisher } from './products/products-event-publisher';
     
 
 
-    // catalaog talks directly to search via RMQ client (not via gateway)
+    // catalaog talks directly to search via RabbitMq Client client (not via gateway)
     ClientsModule.register([
       {
         name: 'SEARCH_EVENTS_CLIENT',
