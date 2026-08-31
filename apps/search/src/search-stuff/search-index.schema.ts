@@ -20,7 +20,8 @@ export class SearchProduct {
 
 
     @Prop({ required: true, enum: ['DRAFT', 'ACTIVE'] })
-    status!: 'DRAFT' | 'ACTIVE';
+    
+status!: 'DRAFT' | 'ACTIVE';
 
 
     @Prop({ required: true })

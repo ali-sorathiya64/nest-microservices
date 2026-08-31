@@ -41,6 +41,8 @@ export function rpcForbiddenError (message:'Forbidden',details?:any) :never{
 }
 
 
+
+
 export function rpcInternal (message:"Internal error",details?:any) :never{
 
     const payload :RpcErrorPayload ={code:'INTERNAL',message,details}

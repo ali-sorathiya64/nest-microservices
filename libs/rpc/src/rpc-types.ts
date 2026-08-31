@@ -11,4 +11,5 @@ export type RpcErrorCode =
         code :RpcErrorCode,
         message:string,
         details ?:any
+
     }
