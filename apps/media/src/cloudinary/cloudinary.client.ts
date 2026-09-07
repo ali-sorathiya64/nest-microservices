@@ -5,7 +5,7 @@ export function initCloudinary() {
   const apiKey = process.env.CLOUDINARY_API_KEY;
   const secretKey = process.env.CLOUDINARY_API_SECRET;
 
-  if (!cloudName || !apiKey || !secretKey) {
+  if (!cloudName || !apiKey ||          !secretKey) {
     throw new Error('Clouidary secrets are missing!!!');
   }
 
