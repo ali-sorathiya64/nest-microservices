@@ -12,6 +12,8 @@ async function bootstrap(){
 
   const port = Number(process.env.MEDIA_TCP_PORT ?? 4013);
 
+
+
   const rmqurl = process.env.RABBITMQ_URL ?? 'amqp://localhost:5672';
 
   const queue = process.env.MEDIA_QUEUE ?? 'media_queue'
