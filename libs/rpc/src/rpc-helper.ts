@@ -11,7 +11,6 @@ export function rpcBadRequest (message:string,details?:any) :never{
 }
 
 
-
 export function rpcNotFoundError (message:string,details?:any) :never{
 
     const payload :RpcErrorPayload ={code:'NOT_FOUND',message,details}
