@@ -6,7 +6,6 @@ export type RpcErrorCode =
     | 'FORBIDDEN'
     | 'INTERNAL'
 
-
     export type RpcErrorPayload ={
         code :RpcErrorCode,
         message:string,
