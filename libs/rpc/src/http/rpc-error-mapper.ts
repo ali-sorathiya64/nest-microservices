@@ -12,7 +12,6 @@ export function mapRpcErrorToHttP (err:any) :never{
         throw new BadRequestException(message);
 
     }
-
      if (code ==="NOT_FOUND" ){
         throw new BadRequestException(message);
 
