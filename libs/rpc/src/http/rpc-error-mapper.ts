@@ -7,7 +7,7 @@ export function mapRpcErrorToHttP (err:any):never{
 
     const code = payload?.code as string | undefined;
 
-    const message = payload?.message ?? "Request failed !!!"
+    const message = payload?.message ?? "Request failed !!"
 
     if (code ==="BAD_REQUEST" || code ==="VALIDATION_ERROR"){
         throw new BadRequestException(message);
