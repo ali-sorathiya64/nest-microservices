@@ -1,6 +1,7 @@
 import { BadRequestException, ForbiddenException, InternalServerErrorException, NotFoundException, UnauthorizedException } from "@nestjs/common";
 
-export function mapRpcErrorToHttP (err:any) :never{
+
+export function mapRpcErrorToHttP (err:any):never{
 
     const payload = err?.error ?? err;
 
