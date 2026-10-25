@@ -1,6 +1,6 @@
 # NestJS Microservices E-Commerce Platform
 
-A production-grade backend system built with **NestJS microservices architecture**, featuring async and RPC-based inter-service communication over **RabbitMQ**, secure authentication via **Clerk JWT**, product search powered by **Elasticsearch**, and media handling via **Cloudinary**.
+A production-grade backend system built with **NestJS microservices architecture**, featuring async and RPC-based inter-service communication over **RabbitMQ**, secure authentication via **Clerk JWT**, product search powered by **Elasticsearch**, and media handling via **Cloudinary** and **Docker**.
 
 ---
 
