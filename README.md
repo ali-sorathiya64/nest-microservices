@@ -64,7 +64,7 @@ This project follows a modular microservices design with a central API Gateway h
 - **Message Broker:** RabbitMQ (async events + RPC)
 - **Database:** MongoDB
 - **Search Engine:** Elasticsearch
-- **Media Storage:** Cloudinary
+- **Media Storage:** Cloudinary And Multer 
 - **Auth:** Clerk (JWT)
 - **Containerization:** Docker
 
