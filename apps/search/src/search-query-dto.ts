@@ -1,9 +1,6 @@
 import { IsNumber, IsString, Min } from "class-validator";
 
-
-
 export class SearchQueryDto{
-
 
     @IsString()
     q!:string
