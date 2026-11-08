@@ -35,7 +35,7 @@ applyToMicroservices(await app)
 ;(await app).enableShutdownHooks
 ;(await app).listen()
 
-logger.log(`Search rmq is listening on  queue ${queue} via ${rmqurl}`)
+logger.log(`Search rmq service is listen on  queue ${queue} via ${rmqurl}`)
 
 }
 
